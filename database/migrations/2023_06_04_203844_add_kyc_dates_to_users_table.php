@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->date('kyc_date_submitted')->nullable();
+            $table->date('kyc_date_analysed')->nullable();
+        });
+
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('kyc_date_submitted');
+            $table->dropColumn('kyc_date_analysed');
+        });
+    }
+};

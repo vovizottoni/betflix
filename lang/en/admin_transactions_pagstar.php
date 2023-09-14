@@ -1,0 +1,31 @@
+<?php
+
+return[
+
+    'deposits_and_withdrawals' => 'Pagstar Deposits and Withdrawals',
+    'transactions' => 'Transactions',
+    'cashin_pix' => 'Cashin Pix',
+    'cashin_cc' => 'Cashin Credit Card',
+    'cashout_pix' => 'Cashout Pix',
+    'select_an_option' => 'Select an option',
+    'cashin' => 'CashIn',
+    'waiting_for_payment' => 'Waiting for payment',
+    'paid' => 'Paid',
+    'canceled' => 'Canceled',
+    'cashout' => 'Cashout',
+    'waiting_for_withdraw' => 'Waiting for withdraw',
+    'Drawee' => 'Drawee',
+    'from' => 'From',
+    'real_symbol' => 'R$',
+    'to' => 'To',
+    'amount' => 'Amount',
+    'type' => 'Type',
+    'status' => 'Status',
+    'date' => 'Date',
+    'user' => 'User',
+    'transaction_code' => 'Transaction Code',
+    'no_transaction_found' => 'No transaction found',
+    'all_status' => 'All Status',
+    'all_types' => 'All Types',
+    'all_users' => 'All Users',
+];

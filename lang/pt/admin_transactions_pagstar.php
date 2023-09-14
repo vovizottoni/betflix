@@ -1,0 +1,31 @@
+<?php
+
+return[
+
+    'deposits_and_withdrawals' => 'Depósitos e Saques Pagstar',
+    'transactions' => 'Transações',
+    'cashin_pix' => 'Depósito Pix',
+    'cashin_cc' => 'Depósito Cartão de crédito',
+    'cashout_pix' => 'Saque Pix',
+    'select_an_option' => 'Selecione uma opção',
+    'cashin' => 'Depósito',
+    'waiting_for_payment' => 'Esperando pagamento',
+    'paid' => 'Pago',
+    'canceled' => 'Cancelado',
+    'cashout' => 'Saque',
+    'waiting_for_withdraw' => 'Aguardando retirada',
+    'drawee' => 'Sacado',
+    'from' => 'De',
+    'real_symbol' => 'R$',
+    'to' => 'Até',
+    'amount' => 'Valor',
+    'type' => 'Tipo',
+    'status' => 'Status',
+    'date' => 'Data',
+    'user' => 'Usuário',
+    'transaction_code' => 'Código de Transação',
+    'no_transaction_found' => 'Nenhuma transação encontrada',
+    'all_status' => 'Todos Status',
+    'all_types' => 'Todos Tipos',
+    'all_users' => 'Todos Usuários',
+];

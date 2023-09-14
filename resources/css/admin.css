@@ -1,0 +1,195 @@
+@import "tailwind/_base.css";
+@import "tailwind/_components.css";
+@import "tailwind/_utilities.css";
+
+@import "admin/_app.css";
+@import "admin/_navbar.css";
+@import "admin/_aside.css";
+@import "admin/_title-bar.css";
+@import "admin/_button.css";
+@import "admin/_hero.css";
+@import "admin/_card.css";
+@import "admin/_icon.css";
+@import "admin/_progress.css";
+@import "admin/_image.css";
+@import "admin/_modal.css";
+@import "admin/_notifications.css";
+@import "admin/form/_checkbox-radio-switch.css";
+@import "admin/form/_form.css";
+@import "admin/_footer.css";
+@import "admin/_select2.css";
+
+.modal {
+    @apply flex;
+}
+
+.select {
+  @apply py-0;
+
+}
+
+.dropdown-content {
+  @apply bg-zinc-800;
+}
+
+.remove-focus:focus {
+  pointer-events: none !important;
+}
+
+.dropdown-content,
+.select,
+.btn,
+.input {
+  @apply rounded-md;
+}
+
+.select,
+.input
+.textarea {
+
+}
+
+.page-header {
+  @apply h-16 flex items-center w-full gap-2 pl-6;
+  	background: #00000017;
+	color: #000000bd;
+	font-weight: 400 !important;
+	font-size: 14px;
+}
+
+.min-h-screen-without-header {
+ min-height: calc(100vh - 64px);
+}
+
+.aside {
+	background: #1c1c20 !important;
+}
+
+.menu-list li > a:hover,
+.menu-list li.active > a {
+    background-color: #00000024;
+}
+
+.menu-list li.active ul {
+    background-color: #00000063;
+}
+
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>thead>tr>th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>thead>tr>td, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>tbody>tr>th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>tbody>tr>td,
+table.dataTable thead .sorting,td {
+	font-size: 13px;
+    white-space: nowrap;
+}
+
+
+table.dataTable thead .sorting {
+	color: #000000bf;
+}
+
+[type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea, select {
+    font-size: 13px !important;
+    font-weight: 400;
+    border: 1px solid #00000021;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+	font-size: 12px;
+}
+
+.green-badge {
+	background: #3ecc3e73;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #00800052;
+    color: #006d00;
+}
+
+.red-badge {
+	background: #cc3e3e73;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #6b000045;
+    color: #6b0000;
+}
+
+table.dataTable thead .sorting {
+	background-size: 13px;
+}
+
+.cancel-btn {
+      background: #00000026;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #000000b5;
+    width: fit-content;
+}
+
+.save-btn {
+    background: #11dc66b3;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #000000b5;
+    width: fit-content;
+}
+.internal-option {
+    background: #00000014;
+    color: #000000d1;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 15px;
+  border-left: 4px solid #00bcd2;
+  padding-left: 9px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+table.dataTable.no-footer {
+  border-bottom: 1px solid #11111114 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: #e6e6e6 !important;
+  border: none !important;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+
+.dataTables_wrapper .dataTables_info {
+    padding-left: 10px;
+}
+
+.modal-box {
+  background: #fff !important;
+}
+
+input {
+    background: #ffffff9e !important;
+    border: 1px solid #0000003d !important;
+}
+
+.alert {
+    border-radius: 3px !important;
+    font-size: 13px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: transparent;
+    color: #000 !important;
+    border: none;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 0px !important;
+}

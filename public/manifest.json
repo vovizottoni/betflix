@@ -1,0 +1,34 @@
+{
+    "name": "BrazaBet",
+    "short_name": "BrazaBet",
+    "version": "0.1",
+    "author": "BrazaBet",
+    "start_url": "/?homescreen=1",
+    "splash_screen_url": "splash_screens/iPhone_14_Pro_landscape.png",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#000",
+    "background_color": "#000"
+    // "icons": [
+    // {
+    //   "src": "assets/images/branding/appleicon.webp ",
+    //   "sizes": "128x128",
+    //   "type": "image/webp"
+    // },
+    // {
+    //   "src": "assets/images/branding/appleicon.webp",
+    //   "sizes": "32x32",
+    //   "type": "image/webp"
+    // },
+    // {
+    //   "src": "assets/images/branding/appleicon.webp",
+    //   "sizes": "192x192",
+    //   "type": "image/webp"
+    // },
+    // {
+    //   "src": "assets/images/branding/appleicon.webp",
+    //   "sizes": "512x512",
+    //   "type": "image/webp"
+    // }
+    // ]
+}

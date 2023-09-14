@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: betflix-config
+data:
+  APP_NAME: "Betflix"
+  APP_ENV: "local"
+  APP_DEBUG: "true"
+  # Once you have an external URL for your application, you can add it here. 
+  APP_URL: "http://betflix.global"
+  
+  # Update the LOG_CHANNEL to stdout for Kubernetes
+  LOG_CHANNEL: "stdout"
+  LOG_LEVEL: "debug"
+  DB_CONNECTION: "mysql"
+  DB_HOST: "private-betflix-production-do-user-12854568-0.b.db.ondigitalocean.com"
+  DB_PORT: "25060"
+  DB_DATABASE: "defaultdb"
+
+  TELESCOPE_ENABLED: "false"
+  
+  # Update the Session driver to Redis, based off part-2 of series
+  BROADCAST_DRIVER: "log"
+  CACHE_DRIVER: "redis"
+  FILESYSTEM_DISK: "local"
+  QUEUE_CONNECTION: "sync"
+  SESSION_DRIVER: "redis"
+  SESSION_LIFETIME: "320"
+  QUEUE_DRIVER: "sync"
+
+  REDIS_HOST: "tls://private-db-redis-do-user-12854568-0.b.db.ondigitalocean.com"
+  REDIS_USERNAME: "default"
+  REDIS_PORT: "25061"
+
+  MAIL_MAILER: "smtp"
+  MAIL_HOST: "smtp.eu.mailgun.org"
+  MAIL_PORT: "587"
+  MAIL_USERNAME: "no-reply@mail-service.betflix.global"
+  MAIL_PASSWORD: "9fa5d3e8be1c5427e37938f6dc109fa7-48c092ba-126314e9"
+  MAIL_ENCRYPTION: "tls"
+  MAIL_FROM_ADDRESS: "support@mail-service.betflix.global"
+  MAIL_FROM_ADDRESS_NO_REPLY: "no-reply@mail-service.betflix.global"
+
+  PAGSTAR_NAME: "Betflix"
+  PAGSTAR_DOCUMENT: "7513745"
+  PAGSTAR_EMAIL: "joao@cnnct.black"
+  PAGSTAR_PASSWORD: "123456"
+  PAGSTAR_ACCESS_TOKEN: "398969|uBfCUFZWkkYxoAV2VeTOmKIlhK9UCEqLfuEWcUMu"
+  PAGSTAR_TENANT_ID: "a0b51bd1-7a9d-4d64-b2da-c79a0efde068"
+  MIN_AMOUNT_DEPOSIT_PIX_BRL: "2"
+  MAX_AMOUNT_DEPOSIT_PIX_BRL: "50000"
+  MIN_AMOUNT_WITHDRAW_PIX_BRL: "1"
+  MAX_AMOUNT_WITHDRAW_PIX_BRL: "5000"
+  NUMBER_OF_WITHDRAWS_PER_DAY: "1"
+  ROLLOVER_MULTIPLICADOR: "50"
+
+  FUNGAMESS_API: "https://fungamess.games/api/v1/BetflixGlobal"
+  FUNGAMESS_API_KEY: "01b65da6cdd58da707198465b4c53b2a"
+  DOMINIO_HYPETECH: "https://api.hypetech.games"
+
+  CAPTCHA_CLIENT: 6LcVM0IlAAAAADO2w88f_q2tkuNsDeTCx8Za9_yu
+  CAPTCHA_SECRET: 6LcVM0IlAAAAAAito4qq3Z6yJhh_SDy2C67b8dtQ
+  MAX_AMOUNT_CASHOUT_AUTOMATIC_APPROVAL: "20000"

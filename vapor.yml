@@ -1,0 +1,38 @@
+id: 44666
+name: betflix
+environments:
+    production:
+        memory: 2048
+        cli-memory: 512
+        cli-timeout: 900
+        runtime: 'php-8.1:al2'
+        database: betflix-production
+        domain: betflix.global
+        schedule: false
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+        firewall:
+            rate-limit: 600
+            bot-control:
+                - CategorySearchEngine
+                - CategorySocialMedia
+                - CategoryScrapingFramework
+    staging:
+        memory: 2048
+        cli-memory: 512
+        cli-timeout: 900
+        runtime: 'php-8.1:al2'
+        database: betflix-staging
+        domain: staging.betflix.global
+        build:
+            - 'composer install --no-dev'
+            - 'php artisan event:cache'
+        firewall:
+            rate-limit: 1000
+            bot-control:
+                - CategorySearchEngine
+                - CategorySocialMedia
+                - CategoryScrapingFramework
+            # dsojFkzB2kaN1zQdwS61bCtpguM8tvjTIgNpL5iQ
+            # G3nhmFsKqe9XtU7TFjuFyvBKUUEbb0SPQq8BXMbl

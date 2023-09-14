@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: betflix
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: betflix
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: betflix
+    spec:
+      containers:
+        - name: nginx
+          image: registry.digitalocean.com/betflix/nginx:latest
+          resources:
+            limits:
+              memory: 512M
+              cpu: 200m
+            requests:
+              memory: 256M
+              cpu: 100m
+          ports:
+            - containerPort: 80
+              protocol: TCP
+              name: http
+        - name: app
+          image: registry.digitalocean.com/betflix/laravel:latest
+          resources:
+            limits:
+              memory: 3072M
+              cpu: 1600m
+            requests:
+              memory: 2048M
+              cpu: 1000m
+          envFrom:
+            - configMapRef:
+                name: betflix-config
+            - secretRef:
+                name: betflix-env
